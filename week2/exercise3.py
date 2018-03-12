@@ -196,7 +196,7 @@ def loops_6():
     TIP: look out for the starting condition.
     """
     returnlist = []
-    for x in range(o, 10):
+    for x in range(0, 10):
         tmp = []
         for y in range(0, x):
             tmp.append(y)
