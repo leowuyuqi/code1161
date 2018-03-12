@@ -16,7 +16,7 @@ def week2exersise2(indices):
     for index in indices:
         wordArray.append[getLetter(index)]
 
-    wordArray(0) = wordArray[0].upper()
+    wordArray(0)= wordArray[0].upper()
     wordArray(1) = wordArray[1].upper()
     wordArray[3] = wordArray[3].upper()
     secret_word="".join(wordArray)
