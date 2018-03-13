@@ -23,14 +23,14 @@ def fix_it(moves=True, should_move=True):
     """
     if moves is True:
         if should_move is True:
-            return 'no problem'
+            return 'No Problem'
         else:
-                return 'duct tape'
+                return 'Duct Tape'
     else:
         if should_move is True:
-            return 'wd-40'
+            return 'WD-40'
         else:
-            return 'no problem'        
+            return 'No Problem'        
 
 
 def loops_1a():
@@ -56,9 +56,9 @@ def loops_1c(number_of_items=5, symbol="#"):
     E.g.: ['#', '#', '#', '#', '#']
     """
     returnlist = []
-    for x in range (1,6):
-        returnlist.append('#')
-        return (returnlist)
+    for x in range (number_of_items):
+        returnlist.append(symbol)
+    return returnlist
 
 
 def loops_2():
@@ -83,7 +83,7 @@ def loops_2():
     for x in range(0, 10):
         tmp = []
         for y in range(0, 10):
-            tmp.append(y)
+            tmp.append('*')
         returnlist.append(tmp)
     return returnlist        
 
@@ -113,7 +113,7 @@ def loops_3():
     for x in range(0, 10):
         tmp = []
         for y in range(0, 10):
-            tmp.append(x)
+            tmp.append(str(x))
         returnlist.append(tmp)
     return returnlist        
 
@@ -139,7 +139,7 @@ def loops_4():
     for x in range(0, 10):
         tmp = []
         for y in range(0, 10):
-            tmp.append(tmp)
+            tmp.append(str(y))
         returnlist.append(tmp)
     return returnlist        
 
@@ -167,10 +167,10 @@ def loops_5():
     you'll come to see the pros and cons of each over time.
     """
     returnlist = []
-    for i in range(0, 10):
+    for i in range(0,10):
         tmp = []
-        for j in range(0, 5):
-            tmp.append('(i' + str(i) +', j' + str(j) + '), ')
+        for j in range(0,5):
+            tmp.append("(i" + str(i) + ", j" + str(j) + ")")
         returnlist.append(tmp)
     return returnlist        
 
@@ -198,8 +198,8 @@ def loops_6():
     returnlist = []
     for x in range(0, 10):
         tmp = []
-        for y in range(0, x):
-            tmp.append(y)
+        for y in range(0, x + 1):
+            tmp.append(str(y))
         returnlist.append(tmp)
     return returnlist        
 
@@ -228,16 +228,16 @@ def loops_7():
     returnlist = []
     for x in range(0, 5):
         tmp = []
-        for y in range(0, 10):
-            tmp.append('*')
-            if x + y < 5:
-                tmp[y] = ''
-            asterisk = x + 5
+        for y in range(0, 9):
+            tmp.append("*")
+            if x + y < 4:
+                tmp[y] = " "
+            asterisk = x + 4
             if y > asterisk:
-                tmp[y] = ''
+                tmp[y] = " "
         returnlist.append(tmp)
 
-    return (returnlist)            
+    return returnlist            
 
 
 def lp(some_kind_of_list, exercise_name):
